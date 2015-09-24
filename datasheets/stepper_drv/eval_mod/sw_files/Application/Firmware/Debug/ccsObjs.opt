@@ -1,0 +1,1 @@
+"./ISR.obj" "./Pragmas.obj" "./Serial_Cmd_Monitor.obj" "./main.obj" "./uart.obj" "./utility.obj" "../lnk_msp430f2617.cmd" -l"libc.a" 
