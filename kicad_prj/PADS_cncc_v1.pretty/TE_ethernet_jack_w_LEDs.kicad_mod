@@ -1,0 +1,8 @@
+(module TE_ethernet_jack_w_LEDs (layer F.Cu) (tedit 5626F240)
+  (fp_text reference REF** (at -0.7 8.325) (layer F.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+  (fp_text value TE_ethernet_jack_w_LEDs (at 0.875 -10.325) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.15)))
+  )
+)
