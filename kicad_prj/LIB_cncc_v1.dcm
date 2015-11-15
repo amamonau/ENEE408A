@@ -17,6 +17,11 @@ $CMP SLVU2.8-4
 D Diode
 $ENDCMP
 #
+$CMP USB_B
+D B connector
+K USB USB_B
+$ENDCMP
+#
 $CMP XTAL
 D Two pin crystal
 K Quartz, Ceramic, Filter, Resonator
