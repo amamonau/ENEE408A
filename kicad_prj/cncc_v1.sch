@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -99,5 +99,11 @@ F6 "DRV_VREF" I L 5500 4250 60
 F7 "~DRV_FAULT" O L 5500 4100 60 
 F8 "VM" U R 6450 3750 60 
 F9 "GND" U R 6450 3850 60 
+$EndSheet
+$Sheet
+S 5500 4600 950  700 
+U 5653A94A
+F0 "BrushedDCMotorDriver" 60
+F1 "dc_motor_drv.sch" 60
 $EndSheet
 $EndSCHEMATC

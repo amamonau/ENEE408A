@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 3 4
+Sheet 3 6
 Title "Stepper Driver"
 Date "2015-11-22"
 Rev "1"
