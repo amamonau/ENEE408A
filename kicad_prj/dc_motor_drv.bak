@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 8
+Sheet 6 9
 Title ""
 Date ""
 Rev ""
@@ -677,7 +677,7 @@ Wire Wire Line
 	1750 3650 1750 3600
 Connection ~ 1750 3600
 Text Label 1200 3600 0    60   ~ 0
-VDD
++12V
 $Comp
 L GNDD #PWR?
 U 1 1 5655A17D
@@ -795,7 +795,7 @@ Wire Wire Line
 Text Label 1600 1400 0    60   ~ 0
 +VM
 Text Label 1600 1500 0    60   ~ 0
-VDD
++12V
 Text Label 1600 1600 0    60   ~ 0
 GND
 Text HLabel 1450 2600 0    60   Output ~ 0
@@ -834,17 +834,6 @@ Wire Wire Line
 Text Label 1550 2700 0    60   ~ 0
 +5V
 $Comp
-L C C?
-U 1 1 565A10C6
-P 4400 4300
-F 0 "C?" H 4425 4400 50  0000 L CNN
-F 1 "0.01uF" H 4425 4200 50  0000 L CNN
-F 2 "" H 4438 4150 30  0000 C CNN
-F 3 "" H 4400 4300 60  0000 C CNN
-	1    4400 4300
-	1    0    0    -1  
-$EndComp
-$Comp
 L GNDD #PWR?
 U 1 1 565A13C9
 P 4400 4500
@@ -860,23 +849,9 @@ Wire Wire Line
 Connection ~ 4400 4100
 Wire Wire Line
 	4400 4500 4400 4450
-$Comp
-L C C?
-U 1 1 565613C4
-P 4150 4300
-F 0 "C?" H 4175 4400 50  0000 L CNN
-F 1 "1uF" H 4175 4200 50  0000 L CNN
-F 2 "" H 4188 4150 30  0000 C CNN
-F 3 "" H 4150 4300 60  0000 C CNN
-	1    4150 4300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4150 4150 4150 4100
 Connection ~ 4150 4100
-Wire Wire Line
-	4400 4450 4150 4450
-Connection ~ 4400 4450
 $Comp
 L CP C?
 U 1 1 565FCB4C
@@ -894,4 +869,29 @@ Connection ~ 1500 3600
 Wire Wire Line
 	1500 3950 1750 3950
 Connection ~ 1750 3950
+$Comp
+L CP C?
+U 1 1 565B9620
+P 4150 4300
+F 0 "C?" H 4175 4400 50  0000 L CNN
+F 1 "1uF" H 4175 4200 50  0000 L CNN
+F 2 "" H 4188 4150 30  0000 C CNN
+F 3 "" H 4150 4300 60  0000 C CNN
+	1    4150 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 565B96BD
+P 4400 4300
+F 0 "C?" H 4425 4400 50  0000 L CNN
+F 1 "0.1uF" H 4425 4200 50  0000 L CNN
+F 2 "" H 4438 4150 30  0000 C CNN
+F 3 "" H 4400 4300 60  0000 C CNN
+	1    4400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 4450 4150 4450
+Connection ~ 4400 4450
 $EndSCHEMATC

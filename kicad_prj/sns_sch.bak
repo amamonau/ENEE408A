@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -128,7 +128,7 @@ F 3 "" H 6000 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6000 900  1    60   ~ 0
-VDD
++12V
 $Comp
 L JMPR_01X03 P?
 U 1 1 56554600
@@ -174,7 +174,7 @@ F 3 "" H 5000 1300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5000 900  1    60   ~ 0
-VDD
++5V
 Text Label 4750 1100 0    60   ~ 0
 X_LIM+
 $Comp
@@ -222,7 +222,7 @@ F 3 "" H 5000 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5000 1700 1    60   ~ 0
-VDD
++5V
 Text Label 4750 1900 0    60   ~ 0
 X_LIM-
 $Comp
@@ -270,7 +270,7 @@ F 3 "" H 5000 2900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5000 2500 1    60   ~ 0
-VDD
++5V
 Text Label 4750 2700 0    60   ~ 0
 X_HOME
 Text Notes 5800 3200 0    60   ~ 0
@@ -348,7 +348,7 @@ F 3 "" H 6000 4200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 6000 3550 1    60   ~ 0
-VDD
++12V
 $Comp
 L JMPR_01X03 P?
 U 1 1 5655C7D3
@@ -394,7 +394,7 @@ F 3 "" H 5000 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5000 3550 1    60   ~ 0
-VDD
++5V
 Text Label 4750 3750 0    60   ~ 0
 Z_LIM+
 $Comp
@@ -442,7 +442,7 @@ F 3 "" H 5000 4750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5000 4350 1    60   ~ 0
-VDD
++5V
 Text Label 4750 4550 0    60   ~ 0
 Z_LIM-
 $Comp
@@ -490,7 +490,7 @@ F 3 "" H 5000 5550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 5000 5150 1    60   ~ 0
-VDD
++5V
 Text Label 4750 5350 0    60   ~ 0
 Z_HOME
 Text Notes 5800 5850 0    60   ~ 0
@@ -568,7 +568,7 @@ F 3 "" H 9250 1550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 9250 900  1    60   ~ 0
-VDD
++12V
 $Comp
 L JMPR_01X03 P?
 U 1 1 5655FB75
@@ -614,7 +614,7 @@ F 3 "" H 8250 1300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8250 900  1    60   ~ 0
-VDD
++5V
 Text Label 8000 1100 0    60   ~ 0
 Y_LIM+
 $Comp
@@ -662,7 +662,7 @@ F 3 "" H 8250 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8250 1700 1    60   ~ 0
-VDD
++5V
 Text Label 8000 1900 0    60   ~ 0
 Y_LIM-
 $Comp
@@ -710,7 +710,7 @@ F 3 "" H 8250 2900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8250 2500 1    60   ~ 0
-VDD
++5V
 Text Label 8000 2700 0    60   ~ 0
 Y_HOME
 Text Notes 9050 3200 0    60   ~ 0
@@ -788,7 +788,7 @@ F 3 "" H 9250 4200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 9250 3550 1    60   ~ 0
-VDD
++12V
 $Comp
 L JMPR_01X03 P?
 U 1 1 5655FC2A
@@ -834,7 +834,7 @@ F 3 "" H 8250 3950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8250 3550 1    60   ~ 0
-VDD
++5V
 Text Label 8000 3750 0    60   ~ 0
 A_LIM+
 $Comp
@@ -882,7 +882,7 @@ F 3 "" H 8250 4750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8250 4350 1    60   ~ 0
-VDD
++5V
 Text Label 8000 4550 0    60   ~ 0
 A_LIM-
 $Comp
@@ -930,7 +930,7 @@ F 3 "" H 8250 5550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 8250 5150 1    60   ~ 0
-VDD
++5V
 Text Label 8000 5350 0    60   ~ 0
 A_HOME
 Text Notes 9050 5850 0    60   ~ 0
@@ -942,7 +942,7 @@ B
 Text Label 5200 6600 0    60   ~ 0
 IN
 Text Label 4900 6250 1    60   ~ 0
-VDD2
++5V
 $Comp
 L C C?
 U 1 1 5656E748
@@ -1004,9 +1004,9 @@ E_B
 Text HLabel 1950 3250 0    60   Output ~ 0
 E_IN
 Text Label 2100 1000 0    60   ~ 0
-VDD
++12V
 Text Label 2100 1100 0    60   ~ 0
-VDD2
++5V
 Text Label 2000 1650 0    60   ~ 0
 X_LIM+
 Text Label 2000 1750 0    60   ~ 0
@@ -1097,7 +1097,7 @@ F 3 "" H 1450 4650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 1450 4100 1    60   ~ 0
-VDD2
++5V
 $Comp
 L GND #PWR?
 U 1 1 56575039
@@ -1111,24 +1111,13 @@ F 3 "" H 2150 5250 60  0000 C CNN
 $EndComp
 $Comp
 L C C?
-U 1 1 5657BB6A
+U 1 1 5657BC5E
 P 3800 4400
 F 0 "C?" H 3825 4500 50  0000 L CNN
-F 1 "1uF" H 3825 4300 50  0000 L CNN
+F 1 "0.1uF" H 3825 4300 50  0000 L CNN
 F 2 "" H 3838 4250 30  0000 C CNN
 F 3 "" H 3800 4400 60  0000 C CNN
 	1    3800 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C?
-U 1 1 5657BC5E
-P 4050 4400
-F 0 "C?" H 4075 4500 50  0000 L CNN
-F 1 "0.01uF" H 4075 4300 50  0000 L CNN
-F 2 "" H 4088 4250 30  0000 C CNN
-F 3 "" H 4050 4400 60  0000 C CNN
-	1    4050 4400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1837,4 +1826,15 @@ Text Label 3550 1300 0    60   ~ 0
 SDA
 Text Label 3550 1400 0    60   ~ 0
 SCL
+$Comp
+L CP C?
+U 1 1 565B5CFC
+P 4050 4400
+F 0 "C?" H 4075 4500 50  0000 L CNN
+F 1 "1uF" H 4075 4300 50  0000 L CNN
+F 2 "" H 4088 4250 30  0000 C CNN
+F 3 "" H 4050 4400 60  0000 C CNN
+	1    4050 4400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
