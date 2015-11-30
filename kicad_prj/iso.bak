@@ -34,7 +34,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A 11000 8500
 encoding utf-8
-Sheet 9 10
+Sheet 9 11
 Title ""
 Date ""
 Rev ""
@@ -874,9 +874,9 @@ F 3 "" H 8100 2450 60  0000 C CNN
 	1    8100 2450
 	1    0    0    -1  
 $EndComp
-Text Label 7900 1250 0    60   ~ 0
+Text Label 7750 950  0    60   ~ 0
 +3.3V
-Text Label 7900 2050 0    60   ~ 0
+Text Label 7750 1750 0    60   ~ 0
 +3.3V
 Text Label 9550 1350 0    60   ~ 0
 +5V
@@ -967,53 +967,53 @@ F 3 "" H 9000 3500 60  0000 C CNN
 $EndComp
 Text Label 9200 1250 0    60   ~ 0
 VEXT
-Text HLabel 9200 2150 2    60   BiDi ~ 0
+Text HLabel 10050 3400 2    60   BiDi ~ 0
 SDA
-Text HLabel 9200 2250 2    60   Output ~ 0
+Text HLabel 10050 3500 2    60   Output ~ 0
 SCL
-Text HLabel 7900 2150 0    60   BiDi ~ 0
+Text HLabel 7650 2150 0    60   BiDi ~ 0
 DSDA
-Text HLabel 7900 2250 0    60   Input ~ 0
+Text HLabel 7650 2250 0    60   Input ~ 0
 DSCL
-Text HLabel 8100 1450 0    60   Input ~ 0
+Text HLabel 7700 1450 0    60   Input ~ 0
 DSCL2
-Text HLabel 8100 1350 0    60   BiDi ~ 0
+Text HLabel 7700 1350 0    60   BiDi ~ 0
 DSDA2
 Text Label 9200 1350 0    60   ~ 0
 SDA2
 Text Label 9200 1450 0    60   ~ 0
 SCL2
-Text Notes 7900 1100 0    50   Italic 0
+Text Notes 8100 750  0    50   Italic 0
 MISCELLANEOUS I2C BUS\nW/ EXTERNAL OPERATIONAL VOLTAGE
 Text Notes 9450 3750 0    60   ~ 0
 I2C BUS ISOLATION
 $Comp
 L JMPR_01X04 P?
 U 1 1 565A7C03
-P 9950 1800
-F 0 "P?" H 9950 2050 50  0000 C CNN
-F 1 "JMPR_01X04" V 10050 1800 50  0000 C CNN
-F 2 "" H 9950 1800 60  0000 C CNN
-F 3 "" H 9950 1800 60  0000 C CNN
-	1    9950 1800
+P 10200 2250
+F 0 "P?" H 10200 2500 50  0000 C CNN
+F 1 "JMPR_01X04" V 10300 2250 50  0000 C CNN
+F 2 "" H 10200 2250 60  0000 C CNN
+F 3 "" H 10200 2250 60  0000 C CNN
+	1    10200 2250
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 565A8333
-P 9700 2050
-F 0 "#PWR?" H 9700 1800 50  0001 C CNN
-F 1 "GND" H 9700 1900 50  0000 C CNN
-F 2 "" H 9700 2050 60  0000 C CNN
-F 3 "" H 9700 2050 60  0000 C CNN
-	1    9700 2050
+P 9950 2500
+F 0 "#PWR?" H 9950 2250 50  0001 C CNN
+F 1 "GND" H 9950 2350 50  0000 C CNN
+F 2 "" H 9950 2500 60  0000 C CNN
+F 3 "" H 9950 2500 60  0000 C CNN
+	1    9950 2500
 	1    0    0    -1  
 $EndComp
-Text Label 9550 1650 0    60   ~ 0
+Text Label 9650 1700 0    60   ~ 0
 VEXT
-Text Label 9550 1750 0    60   ~ 0
+Text Label 9800 2200 0    60   ~ 0
 SDA2
-Text Label 9550 1850 0    60   ~ 0
+Text Label 9800 2300 0    60   ~ 0
 SCL2
 $Comp
 L ISO7140FCC U?
@@ -1694,29 +1694,25 @@ Wire Wire Line
 Wire Wire Line
 	8100 2350 8100 2450
 Wire Wire Line
-	7900 1250 8150 1250
-Wire Wire Line
-	7900 2050 8150 2050
-Wire Wire Line
 	9550 1350 9750 1350
 Wire Wire Line
 	9150 2050 9400 2050
 Wire Wire Line
-	9150 2150 9200 2150
+	9150 2150 9400 2150
 Wire Wire Line
-	9150 2250 9200 2250
+	9150 2250 9400 2250
 Wire Wire Line
-	8150 2150 7900 2150
+	8150 2150 7650 2150
 Wire Wire Line
-	8150 2250 7900 2250
+	8150 2250 7650 2250
 Wire Wire Line
 	9150 1350 9400 1350
 Wire Wire Line
 	9150 1450 9400 1450
 Wire Wire Line
-	8150 1350 8100 1350
+	8150 1350 7700 1350
 Wire Wire Line
-	8150 1450 8100 1450
+	8150 1450 7700 1450
 Wire Wire Line
 	8700 3100 8700 2750
 Wire Wire Line
@@ -1744,7 +1740,7 @@ Wire Notes Line
 Wire Notes Line
 	7300 3800 10400 3800
 Wire Notes Line
-	9900 3100 9900 3100
+	9850 3450 9850 3450
 Wire Wire Line
 	9000 3100 9000 2750
 Wire Wire Line
@@ -1752,15 +1748,13 @@ Wire Wire Line
 Wire Wire Line
 	9150 1250 9750 1250
 Wire Wire Line
-	9750 1650 9550 1650
+	9500 2200 10000 2200
 Wire Wire Line
-	9750 1750 9550 1750
+	9500 2300 10000 2300
 Wire Wire Line
-	9750 1850 9550 1850
+	10000 2400 9950 2400
 Wire Wire Line
-	9750 1950 9700 1950
-Wire Wire Line
-	9700 1950 9700 2050
+	9950 2400 9950 2500
 Wire Wire Line
 	7100 4350 7500 4350
 Wire Wire Line
@@ -1957,4 +1951,166 @@ Text Label 5750 7050 2    60   ~ 0
 +5V
 Text Label 5150 7050 0    60   ~ 0
 +3.3V
+$Comp
+L R R?
+U 1 1 565F488C
+P 9950 3200
+F 0 "R?" V 10030 3200 50  0000 C CNN
+F 1 "3.24k" V 9950 3200 50  0000 C CNN
+F 2 "" V 9880 3200 30  0000 C CNN
+F 3 "" H 9950 3200 30  0000 C CNN
+	1    9950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 565F607D
+P 9650 1900
+F 0 "R?" V 9730 1900 50  0000 C CNN
+F 1 "3.24k" V 9650 1900 50  0000 C CNN
+F 2 "" V 9580 1900 30  0000 C CNN
+F 3 "" H 9650 1900 30  0000 C CNN
+	1    9650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 565F6109
+P 9800 1900
+F 0 "R?" V 9880 1900 50  0000 C CNN
+F 1 "3.24k" V 9800 1900 50  0000 C CNN
+F 2 "" V 9730 1900 30  0000 C CNN
+F 3 "" H 9800 1900 30  0000 C CNN
+	1    9800 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 565F61A0
+P 9800 3200
+F 0 "R?" V 9880 3200 50  0000 C CNN
+F 1 "3.24k" V 9800 3200 50  0000 C CNN
+F 2 "" V 9730 3200 30  0000 C CNN
+F 3 "" H 9800 3200 30  0000 C CNN
+	1    9800 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3400 10050 3400
+Wire Wire Line
+	9500 3500 10050 3500
+Wire Wire Line
+	9800 3350 9800 3500
+Connection ~ 9800 3500
+Wire Wire Line
+	9950 3350 9950 3400
+Connection ~ 9950 3400
+Text Label 9150 2150 0    60   ~ 0
+SDA
+Text Label 9150 2250 0    60   ~ 0
+SCL
+Wire Wire Line
+	9950 2750 9950 3050
+Wire Wire Line
+	9800 3050 9800 3000
+Wire Wire Line
+	9800 3000 9950 3000
+Connection ~ 9950 3000
+Text Label 9950 2950 1    60   ~ 0
++5V
+Wire Wire Line
+	9800 2050 9800 2200
+Connection ~ 9800 2200
+Wire Wire Line
+	9650 2050 9650 2300
+Connection ~ 9650 2300
+Wire Wire Line
+	9650 1750 9650 1700
+Wire Wire Line
+	9650 1700 9950 1700
+Wire Wire Line
+	9950 1700 9950 2100
+Wire Wire Line
+	9950 2100 10000 2100
+Wire Wire Line
+	9800 1750 9800 1700
+Connection ~ 9800 1700
+$Comp
+L R R?
+U 1 1 56604E68
+P 7750 1950
+F 0 "R?" V 7830 1950 50  0000 C CNN
+F 1 "3.24k" V 7750 1950 50  0000 C CNN
+F 2 "" V 7680 1950 30  0000 C CNN
+F 3 "" H 7750 1950 30  0000 C CNN
+	1    7750 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56604E6E
+P 7900 1950
+F 0 "R?" V 7980 1950 50  0000 C CNN
+F 1 "3.24k" V 7900 1950 50  0000 C CNN
+F 2 "" V 7830 1950 30  0000 C CNN
+F 3 "" H 7900 1950 30  0000 C CNN
+	1    7900 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56604F48
+P 7750 1150
+F 0 "R?" V 7830 1150 50  0000 C CNN
+F 1 "3.24k" V 7750 1150 50  0000 C CNN
+F 2 "" V 7680 1150 30  0000 C CNN
+F 3 "" H 7750 1150 30  0000 C CNN
+	1    7750 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56604F4E
+P 7900 1150
+F 0 "R?" V 7980 1150 50  0000 C CNN
+F 1 "3.24k" V 7900 1150 50  0000 C CNN
+F 2 "" V 7830 1150 30  0000 C CNN
+F 3 "" H 7900 1150 30  0000 C CNN
+	1    7900 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 2100 7750 2250
+Connection ~ 7750 2250
+Wire Wire Line
+	7900 2100 7900 2150
+Connection ~ 7900 2150
+Wire Wire Line
+	7750 1300 7750 1450
+Connection ~ 7750 1450
+Wire Wire Line
+	7900 1300 7900 1350
+Connection ~ 7900 1350
+Wire Wire Line
+	7750 1000 7750 950 
+Wire Wire Line
+	7750 950  8050 950 
+Wire Wire Line
+	8050 950  8050 1250
+Wire Wire Line
+	8050 1250 8150 1250
+Wire Wire Line
+	7900 1000 7900 950 
+Connection ~ 7900 950 
+Wire Wire Line
+	7750 1800 7750 1750
+Wire Wire Line
+	7750 1750 8000 1750
+Wire Wire Line
+	8000 1750 8000 2050
+Wire Wire Line
+	8000 2050 8150 2050
+Wire Wire Line
+	7900 1800 7900 1750
+Connection ~ 7900 1750
 $EndSCHEMATC
