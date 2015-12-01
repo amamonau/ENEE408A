@@ -4,12 +4,12 @@ $CMP C
 D Unpolarized capacitor
 $ENDCMP
 #
-$CMP LED
-K LED
-$ENDCMP
-#
 $CMP CP
 D Polarised capacitor
+$ENDCMP
+#
+$CMP LED
+K LED
 $ENDCMP
 #
 $CMP R

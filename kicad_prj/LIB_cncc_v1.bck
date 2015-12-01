@@ -8,6 +8,10 @@ $CMP CP
 D Polarised capacitor
 $ENDCMP
 #
+$CMP LED
+K LED
+$ENDCMP
+#
 $CMP R
 D Resistor
 K R DEV
