@@ -32,7 +32,7 @@ LIBS:LIB_cncc_v1
 LIBS:cncc_v1-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A 11000 8500
 encoding utf-8
 Sheet 13 13
 Title ""
