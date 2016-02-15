@@ -1,12 +1,12 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP C
+D Unpolarized capacitor
+$ENDCMP
+#
 $CMP CD4504B
 D Hex Buffer
 K CMOS BUFFER
-$ENDCMP
-#
-$CMP C
-D Unpolarized capacitor
 $ENDCMP
 #
 $CMP CP

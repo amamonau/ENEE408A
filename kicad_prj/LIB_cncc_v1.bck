@@ -4,6 +4,11 @@ $CMP C
 D Unpolarized capacitor
 $ENDCMP
 #
+$CMP CD4504B
+D Hex Buffer
+K CMOS BUFFER
+$ENDCMP
+#
 $CMP CP
 D Polarised capacitor
 $ENDCMP
