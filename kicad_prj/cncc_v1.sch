@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cncc_v1-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -624,13 +625,13 @@ CH[0..3]
 Text Label 8750 1650 1    60   ~ 0
 CH[0..3]
 $Sheet
-S 1750 1100 1550 3200
+S 1250 3300 1550 3200
 U 566CD168
 F0 "MCU_GPIO" 60
 F1 "mcu_gpio.sch" 60
 $EndSheet
 $Sheet
-S 1800 4700 1500 1750
+S 1300 1050 1500 1750
 U 566DECB3
 F0 "MCU_MAIN" 60
 F1 "MCU_main.sch" 60

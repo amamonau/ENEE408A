@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cncc_v1-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -123,9 +124,9 @@ S 6500 4450 900  1800
 U 5659B5AB
 F0 "SensorsBreakOut" 60
 F1 "sns_sch.sch" 60
-F2 "VS" U R 7400 4800 60 
-F3 "VE" U R 7400 4900 60 
-F4 "GND" U R 7400 5000 60 
+F2 "VS" U R 7400 4900 60 
+F3 "VE" U R 7400 5000 60 
+F4 "GND" U R 7400 5100 60 
 F5 "X_L+" O L 6500 4500 60 
 F6 "X_L-" O L 6500 4600 60 
 F7 "X_HM" O L 6500 4700 60 
@@ -145,6 +146,7 @@ F20 "+5V_REF" I R 7400 4500 60
 F21 "SDA" B L 6500 6100 60 
 F22 "SCL" I L 6500 6200 60 
 F23 "CH7_IN" I R 7400 4600 60 
+F24 "AGND" U R 7400 4700 60 
 $EndSheet
 $Sheet
 S 6450 2300 900  500 
@@ -289,18 +291,14 @@ Wire Wire Line
 Wire Wire Line
 	5550 1300 7800 1300
 Wire Wire Line
-	7800 1300 7800 4800
-Wire Wire Line
-	7800 4800 7400 4800
+	7800 1300 7800 4900
 Wire Wire Line
 	7400 3750 7800 3750
 Connection ~ 7800 3750
 Wire Wire Line
 	5550 1400 7850 1400
 Wire Wire Line
-	7850 1400 7850 4900
-Wire Wire Line
-	7850 4900 7400 4900
+	7850 1400 7850 5000
 Wire Wire Line
 	6400 1400 6400 2350
 Wire Wire Line
@@ -317,9 +315,7 @@ Connection ~ 5750 1800
 Wire Wire Line
 	5550 1500 7900 1500
 Wire Wire Line
-	7900 1150 7900 5000
-Wire Wire Line
-	7900 5000 7400 5000
+	7900 1150 7900 5100
 Wire Wire Line
 	7400 3850 7900 3850
 Connection ~ 7900 3850
@@ -629,15 +625,24 @@ CH[0..3]
 Text Label 8750 1650 1    60   ~ 0
 CH[0..3]
 $Sheet
-S 1750 1100 1550 3200
+S 1250 3300 1550 3200
 U 566CD168
 F0 "MCU_GPIO" 60
 F1 "mcu_gpio.sch" 60
 $EndSheet
 $Sheet
-S 1800 4700 1500 1750
+S 1300 1050 1500 1750
 U 566DECB3
 F0 "MCU_MAIN" 60
 F1 "MCU_main.sch" 60
 $EndSheet
+Wire Wire Line
+	7900 5100 7400 5100
+Wire Wire Line
+	7850 5000 7400 5000
+Wire Wire Line
+	7800 4900 7400 4900
+Wire Wire Line
+	7400 4700 7900 4700
+Connection ~ 7900 4700
 $EndSCHEMATC
