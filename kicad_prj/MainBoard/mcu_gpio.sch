@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cncc_v1-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -45,7 +46,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TM4C1294NCPDT U?
+L TM4C1294NCPDT-RESCUE-cncc_v1 U?
 U 1 1 566CD626
 P 5450 3650
 F 0 "U?" H 5200 2000 60  0000 C CNN

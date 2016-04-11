@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:cncc_v1-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -969,6 +970,4 @@ Wire Wire Line
 Connection ~ 9050 4500
 Text HLabel 9650 2650 2    60   UnSpc ~ 0
 +VDD_LP
-Text Notes 6350 4700 0    60   ~ 0
-NOTE: CORRECT PART SYMBOL
 $EndSCHEMATC
