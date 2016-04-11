@@ -1,0 +1,39 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C
+D Unpolarized capacitor
+$ENDCMP
+#
+$CMP CD4504B
+D Hex Buffer
+K CMOS BUFFER
+$ENDCMP
+#
+$CMP CP
+D Polarised capacitor
+$ENDCMP
+#
+$CMP LED
+K LED
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R DEV
+$ENDCMP
+#
+$CMP SLVU2.8-4
+D Diode
+$ENDCMP
+#
+$CMP USB_B
+D B connector
+K USB USB_B
+$ENDCMP
+#
+$CMP XTAL
+D Two pin crystal
+K Quartz, Ceramic, Filter, Resonator
+$ENDCMP
+#
+#End Doc Library

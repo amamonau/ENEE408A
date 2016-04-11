@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name PADS_cncc_v1)(type KiCad)(uri "$(KIPRJMOD)\\PADS_cncc_v1.pretty")(options "")(descr ""))
+)
