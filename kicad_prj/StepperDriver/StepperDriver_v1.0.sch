@@ -363,7 +363,7 @@ Wire Wire Line
 Connection ~ 5900 5150
 Connection ~ 6100 5150
 Text Label 5300 2550 0    60   ~ 0
-V3P3
+3V3
 Wire Wire Line
 	3450 2400 3900 2400
 Wire Wire Line
@@ -381,7 +381,7 @@ Wire Wire Line
 Wire Wire Line
 	6550 4350 6800 4350
 Text Label 6600 4350 0    60   ~ 0
-V3P3
+3V3
 Wire Wire Line
 	5050 4300 4800 4300
 Wire Wire Line
@@ -439,7 +439,7 @@ Wire Wire Line
 	7350 3350 7350 3150
 Connection ~ 7350 3150
 Text Label 7200 3150 0    60   ~ 0
-V3P3
+3V3
 $Comp
 L GNDD #PWR05
 U 1 1 56533262
@@ -529,7 +529,7 @@ Connection ~ 2800 4500
 Wire Wire Line
 	2800 4200 2800 3950
 Text Label 2800 4150 1    60   ~ 0
-V3P3
+3V3
 Text Label 3000 4500 0    60   ~ 0
 ~FLT
 Text Label 2300 3950 0    60   ~ 0
