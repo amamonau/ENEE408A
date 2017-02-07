@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<!-- Do not remove or modify this line --><head data-gc-version="1.5.201404071800">
+<meta charset="utf-8"/>
+<title>Untitled</title>
+<script type="text/javascript" src="lib/davinci.dojo_1_8/WebContent/dojo/dojo/dojo.js" data-dojo-config="'parseOnLoad':true,'async':true,'packages':[{'name':'gc','location':'../../../../davinci.gc_1_5/WebContent/gc'},{'name':'maqetta','location':'../../../../davinci.gc_1_5/WebContent/maqetta'}]"></script>
+<script type="text/javascript">
+require([
+  "dijit/dijit",
+  "dojo/parser",
+  "maqetta/space",
+  "maqetta/AppStates",
+  "gc/dijit/ContentPane",
+  "gc/dijit/Image",
+  "gc/dijit/MultiImage",
+  "gc/dijit/ToggleButton",
+  "gc/dijit/ValueButton",
+  "gc/dijit/TextBox",
+  "dijit/form/HorizontalSlider",
+  "dijit/form/HorizontalRule",
+  "dijit/form/HorizontalRuleLabels",
+  "gc/dijit/HorizontalSlider",
+  "gc/dijit/HorizontalRule",
+  "gc/dijit/HorizontalRuleLabels",
+  "gc/dijit/NumberSpinner"
+]);
+</script>
+<style>@import "lib/davinci.dojo_1_8/WebContent/maqetta/themes/claro/document.css";@import "lib/davinci.dojo_1_8/WebContent/maqetta/themes/claro/claro.css";@import "lib/davinci.dojo_1_8/WebContent/dojo/dojo/resources/dojo.css";@import "lib/davinci.gc_1_5/WebContent/gc/dijit/libs/css/widgets.css";@import "app.css";
+</style>
+<script type="text/javascript" src="app.js"></script>
+<script type="text/javascript" src="lib/davinci.gc_1_5/WebContent/gc/backplane/guiComposer.js"></script>
+</head>
+<body data-maq-flow-layout="false" data-maq-comptype="desktop" class="claro" data-maq-ws="collapse" id="myapp" data-maq-appstates="{}">
+ <div id="BACKGROUND" data-dojo-type="gc.dijit.ContentPane" title="Pane" extractContent="false" preventCache="false" preload="false" refreshOnShow="false" visible="true" style="position: absolute; z-index: 900; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; width: 700px; height: 450px; background-color: #aaaaaa; background-image: -webkit-gradient(linear,100% 0%,NaN% 100%, from(#d6d3d3), to(#aaaaaa)); background-image: -o-linear-gradient(-45deg,#d6d3d3, #aaaaaa); background-image: -ms-linear-gradient(-45deg,#d6d3d3, #aaaaaa); background-image: -moz-linear-gradient(-45deg,#d6d3d3, #aaaaaa); background-image: -webkit-linear-gradient(-45deg,#d6d3d3, #aaaaaa); background-image: linear-gradient(-45deg,#d6d3d3, #aaaaaa); left: 0px; top: 0px;" doLayout="false">
+<img id="TI_BANNER" data-dojo-type="gc.dijit.Image" visible="true" style="position: absolute; z-index: 900; height: 60px; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; -moz-box-sizing: border-box; left: 0px; top: 0px; width: 700px;" src="Images/ti_logo.jpg"></img>
+<label style="position: absolute; z-index: 900; color: black; font-weight: bold; font-size: 24px; left: 300px; top: 16px; font-family: Arial,Helvetica,sans-serif;">
+  DRV8701EVM_GUIv1.0</label>
+</div>
+ <div id="BORDER2" style="border: 2px solid black; position: absolute; z-index: 900; width: 546px; height: 180px; left: 150px; top: 62px;">
+   <input type="text" id="SPIN_EN" data-dojo-type="gc.dijit.NumberSpinner" max="100" min="0" intermediateChanges="false" trim="false" uppercase="false" lowercase="false" propercase="false" invalidMessage="$_unset_$" visible="true" style="position: absolute; z-index: 900; left: 411px; top: 75px; width: 60px;" value="0"></input>
+   <label id="T_SPEED" style="font-size: 10px; font-family: Arial,Helvetica,sans-serif; color: black; font-weight: bold; position: absolute; z-index: 900; left: 253.5px; top: 118px;">
+     *Sets Speed of Motor</label>
+   <label id="T_ENABLE" style="font-weight: bold; font-family: Arial,Helvetica,sans-serif; color: black; font-size: 14px; position: absolute; z-index: 900; left: 280.5px; top: 56px;">
+     ENABLE</label>
+   <label id="T_%" style="font-weight: bold; font-size: 14px; color: black; font-family: Arial,Helvetica,sans-serif; position: absolute; z-index: 900; left: 481px; top: 77.5px;">
+     %</label>
+   <div id="SLIDE_EN" data-dojo-type="gc.dijit.HorizontalSlider" intermediateChanges="false" discreteValues="101" visible="true" style="width: 200px; position: absolute; z-index: 900; left: 205px; top: 80px;">
+     <div id="widget_225" data-dojo-type="gc.dijit.HorizontalRule" container="bottomDecoration" style="height: 5px;"></div>
+     <ol id="widget_226" data-dojo-type="gc.dijit.HorizontalRuleLabels" labels="0%,50%,100%" container="bottomDecoration" style="height: 20px; font-weight: bold; color: black; font-size: 14px; font-family: Arial,Helvetica,sans-serif;"></ol>
+   </div>
+   <img id="LED_PHASE" data-dojo-type="gc.dijit.MultiImage" images="Images/red_button.png,Images/green_button.png" visible="true" style="width: 35px; height: 35px; position: absolute; z-index: 900; left: 39.046875px; top: 73.390625px;"></img>
+   <input id="BUT_PHASE" type="button" data-dojo-type="gc.dijit.ToggleButton" intermediateChanges="false" label="PHASE" iconClass="dijitNoIcon" visible="true" style="font-weight: bold; font-size: 12px; color: black; vertical-align: middle; font-style: normal; text-decoration: none; line-height: normal; white-space: nowrap; text-align: center; width: 80px; position: absolute; z-index: 900; left: 78.74062490463257px; top: 73.33437490463257px;"></input>
+   <label id="T_DIRECTION" style="height: 35px; font-size: 10px; font-family: Arial,Helvetica,sans-serif; color: black; font-weight: bold; position: absolute; z-index: 900; left: 43.046875px; top: 118.5px;">
+     *Sets Direction of Motor</label>
+   <label id="T_MOTOR_CONTROL" style="font-weight: bold; text-align: center; text-decoration: underline; font-size: 14px; color: black; position: absolute; z-index: 900; width: 150px; left: 190px; top: 6px;">
+     Motor Control</label>
+ </div>
+ <div id="BORDER1" style="border: 2px solid black; position: absolute; z-index: 900; width: 148px; height: 384px; left: 0px; top: 62px;">
+   <img id="LED_NSLEEP" data-dojo-type="gc.dijit.MultiImage" images="Images/red_button.png,Images/green_button.png" visible="true" style="width: 35px; height: 35px; position: absolute; z-index: 900; left: 13px; top: 37.8125px;"></img>
+   <label id="T_NFAULT" style="font-weight: bold; color: black; font-size: 14px; font-family: Arial,Helvetica,sans-serif; position: absolute; z-index: 900; left: 69px; top: 177px;">
+     nFAULT</label>
+   <input id="BUT_NSLEEP" type="button" data-dojo-type="gc.dijit.ToggleButton" intermediateChanges="false" label="nSLEEP" iconClass="dijitNoIcon" visible="true" style="font-weight: bold; color: black; vertical-align: middle; font-style: normal; text-decoration: none; line-height: normal; white-space: nowrap; text-align: center; width: 80px; font-family: Arial,Helvetica,sans-serif; font-size: 14px; position: absolute; z-index: 900; left: 53.356250047683716px; top: 38.528125047683716px;"></input>
+   <label id="T_SNSOUT" style="font-weight: bold; color: black; font-family: Arial,Helvetica,sans-serif; font-size: 14px; position: absolute; z-index: 900; left: 69px; top: 134.703125px;">
+     SNSOUT</label>
+   <label id="T_REG_GREEN" style="color: black; font-family: Arial,Helvetica,sans-serif; font-size: 10px; font-weight: bold; position: absolute; z-index: 900; left: 15.921875px; top: 209.203125px;">
+     *Red=Low, Green=High</label>
+   <img id="LED_SNSOUT" data-dojo-type="gc.dijit.MultiImage" images="Images/red_button.png,Images/green_button.png" visible="true" style="width: 35px; height: 35px; position: absolute; z-index: 900; left: 13px; top: 125.203125px;"></img>
+   <img id="LED_NFAULT" data-dojo-type="gc.dijit.MultiImage" images="Images/red_button.png,Images/green_button.png" visible="true" style="width: 35px; height: 35px; position: absolute; z-index: 900; left: 13px; top: 167.5px;"></img>
+   <input id="DISP_SO" type="text" data-dojo-type="gc.dijit.TextBox" intermediateChanges="false" trim="false" uppercase="false" lowercase="false" propercase="false" selectOnClick="false" visible="true" readOnly="true" style="width: 50px; position: absolute; z-index: 900; left: 46.875px; top: 265.203125px;"></input>
+   <label id="T_MOTOR_CURRENT" style="font-weight: bold; text-align: center; text-decoration: underline; width: 140px; color: black; font-family: Arial,Helvetica,sans-serif; font-size: 16px; position: absolute; z-index: 900; left: 4.9375px; top: 232.203125px;">
+     Motor Current</label>
+   <input id="DISP_FW" type="text" data-dojo-type="gc.dijit.TextBox" intermediateChanges="false" trim="false" uppercase="false" lowercase="false" propercase="false" selectOnClick="false" visible="true" readOnly="true" style="vertical-align: middle; text-align: center; width: 50px; position: absolute; z-index: 900; left: 47.9375px; top: 350.203125px;"></input>
+   <label id="T_VERSION" style="font-weight: bold; width: 140px; text-decoration: underline; font-family: Arial,Helvetica,sans-serif; color: black; font-size: 16px; position: absolute; z-index: 900; left: 5px; top: 322.203125px;">
+     Firmware Version</label>
+   <label id="T_VALID" style="font-family: Arial,Helvetica,sans-serif; color: black; font-size: 10px; font-weight: bold; position: absolute; z-index: 900; left: 11.875px; top: 299.203125px;">
+     *Only Valid in Drive State</label>
+   <label id="CONTROL_T" style="font-weight: bold; width: 100px; text-align: center; text-decoration: underline; color: black; font-family: Arial,Helvetica,sans-serif; font-size: 16px; position: absolute; z-index: 900; left: 22.9375px; top: 6.203125px;">
+     Control</label>
+   <label id="T_STATUS" style="font-weight: bold; text-align: center; text-decoration: underline; width: 100px; color: black; font-family: Arial,Helvetica,sans-serif; font-size: 16px; position: absolute; z-index: 900; left: 26px; top: 97.3125px;">
+     Status</label>
+   <label style="font-weight: bold; text-align: center; width: 150px; font-size: 16px; color: black; position: absolute; z-index: 900; left: 1px; top: 82.3125px;">
+     ------------------</label>
+   <label style="font-weight: bold; text-align: center; width: 150px; font-size: 16px; color: black; position: absolute; z-index: 900; left: 0px; top: 307.203125px;">
+     ------------------</label>
+   <label style="font-weight: bold; text-align: center; width: 150px; font-size: 16px; color: black; position: absolute; z-index: 900; left: -0.0625px; top: 217.203125px;">
+     ------------------</label>
+   <label id="T_A1" style="font-weight: bold; font-family: Arial,Helvetica,sans-serif; color: black; font-size: 16px; position: absolute; z-index: 900; left: 107px; top: 266.203125px;">
+     A</label>
+ </div>
+ <div id="BORDER3" style="border: 2px solid black; position: absolute; z-index: 900; height: 202px; width: 546px; left: 150px; top: 244px;">
+  <label id="T_LINE2" style="font-weight: bold; color: black; font-size: 12px; font-family: Arial,Helvetica,sans-serif; position: absolute; z-index: 900; left: 401.5px; top: 109.796875px;">
+    GAIN = 20V/V</label>
+  <label id="T_LINE1" style="font-weight: bold; color: black; font-size: 12px; font-family: Arial,Helvetica,sans-serif; position: absolute; z-index: 900; left: 352px; top: 88px;">
+    ILIM = VREF / (GAIN * RSENSE)</label>
+  <label id="T_LINE3" style="font-weight: bold; font-size: 12px; color: black; font-family: Arial,Helvetica,sans-serif; position: absolute; z-index: 900; left: 393.5px; top: 129.796875px;">
+    RSENSE = 10mΩ</label>
+  <label id="T_ILIM" style="font-weight: bold; font-size: 12px; color: black; position: absolute; z-index: 900; left: 374px; top: 58.796875px;">
+    ILIM =</label>
+  <input id="widget_319" type="text" data-dojo-type="gc.dijit.TextBox" intermediateChanges="false" trim="false" uppercase="false" lowercase="false" propercase="false" selectOnClick="false" visible="true" readOnly="true" style="width: 50px; position: absolute; z-index: 900; left: 423px; top: 55.796875px;"></input>
+  <label id="T_A" style="font-weight: bold; font-size: 12px; color: black; position: absolute; z-index: 900; width: 50px; left: 481px; top: 58.796875px;">
+    A</label>
+  <input type="text" id="SPIN_VREF" data-dojo-type="gc.dijit.NumberSpinner" max="3.3" min="0" intermediateChanges="false" trim="false" uppercase="false" lowercase="false" propercase="false" invalidMessage="$_unset_$" smallDelta="0.1" largeDelta="0.1" visible="true" style="position: absolute; z-index: 900; left: 239.5px; top: 79.703125px; width: 60px;" value="0"></input>
+  <label id="T_CURRENT_LIM" style="font-size: 10px; color: black; font-family: Arial,Helvetica,sans-serif; font-weight: bold; position: absolute; z-index: 900; left: 58px; top: 125.703125px;">
+    *Sets Current Limit of Motor</label>
+  <label id="T_CURRENT_SETTING" style="font-weight: bold; text-align: center; text-decoration: underline; font-size: 16px; color: black; font-family: Arial,Helvetica,sans-serif; width: 150px; position: absolute; z-index: 900; left: 190px; top: 5px;">
+    Current Setting</label>
+  <label id="T_VREF" style="font-weight: bold; font-size: 14px; color: black; font-family: Arial,Helvetica,sans-serif; position: absolute; z-index: 900; left: 112.109375px; top: 63.703125px;">
+    VREF</label>
+  <label style="font-weight: bold; font-size: 14px; color: black; font-family: Arial,Helvetica,sans-serif; position: absolute; z-index: 900; left: 309.5px; top: 83.203125px;">
+  V</label>
+  <div id="SLIDE_VREF" data-dojo-type="gc.dijit.HorizontalSlider" intermediateChanges="false" discreteValues="101" visible="true" style="width: 200px; position: absolute; z-index: 900; left: 30px; top: 85px;">
+    <div id="widget_327" data-dojo-type="gc.dijit.HorizontalRule" container="bottomDecoration" style="height: 5px;"></div>
+    <ol id="widget_328" data-dojo-type="gc.dijit.HorizontalRuleLabels" labels="0V,1.65V,3.3V" container="bottomDecoration" style="height: 20px; font-weight: bold; color: black; font-family: Arial,Helvetica,sans-serif; font-size: 14px;"></ol>
+  </div>
+</div>
+</body>
+</html>

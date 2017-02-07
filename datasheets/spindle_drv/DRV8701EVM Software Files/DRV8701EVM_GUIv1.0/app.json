@@ -1,0 +1,90 @@
+{"widgetBindings": [
+    {
+        "propertyName": "selection",
+        "serverBindName": "G_nSLEEP",
+        "widgetId": "LED_NSLEEP",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "G_nSLEEP",
+        "widgetId": "BUT_NSLEEP",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "G_SNSOUT",
+        "widgetId": "LED_SNSOUT",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "G_nFAULT",
+        "widgetId": "LED_NFAULT",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "G_MOTOR_CURRENT",
+        "widgetId": "DISP_SO",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "SOToCurrent"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "G_FIRMWARE_VERSION",
+        "widgetId": "DISP_FW",
+        "options": {"dataType": "String"}
+    },
+    {
+        "propertyName": "selection",
+        "serverBindName": "G_PH_IN1",
+        "widgetId": "LED_PHASE",
+        "options": {"dataType": "Long"}
+    },
+    {
+        "propertyName": "checked",
+        "serverBindName": "G_PH_IN1",
+        "widgetId": "BUT_PHASE",
+        "options": {"dataType": "Boolean"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "G_EN_IN2",
+        "widgetId": "SLIDE_EN",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "G_EN_IN2",
+        "widgetId": "SPIN_EN",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "G_VREF",
+        "widgetId": "SLIDE_VREF",
+        "options": {"dataType": "Double"}
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "G_VREF",
+        "widgetId": "SPIN_VREF",
+        "options": {
+            "dataType": "Double",
+            "outPreProcessingFunction": "VrefFloatToPer",
+            "inPreProcessingFunction": "VrefPerToFloat"
+        }
+    },
+    {
+        "propertyName": "value",
+        "serverBindName": "G_VREF",
+        "widgetId": "widget_319",
+        "options": {
+            "dataType": "String",
+            "inPreProcessingFunction": "VrefToIlim"
+        }
+    }
+]}

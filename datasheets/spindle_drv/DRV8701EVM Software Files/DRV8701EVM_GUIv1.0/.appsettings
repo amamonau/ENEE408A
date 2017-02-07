@@ -1,0 +1,9 @@
+{"default": {
+    "connection": "UARTConnection",
+    "deviceFilter": "MSP430G2553",
+    "program": "appProgram.out",
+    "device": "MSP430G2553",
+    "connectionFilter": "",
+    "comportFilter": "USB Serial Port",
+    "baudrate": "9600"
+}}

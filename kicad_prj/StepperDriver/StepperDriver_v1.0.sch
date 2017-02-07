@@ -475,16 +475,16 @@ M1
 $Comp
 L R R?
 U 1 1 56534F8B
-P 2800 4350
+P 2800 4100
 AR Path="/56526EA5/56534F8B" Ref="R?"  Part="1" 
 AR Path="/5653D417/56534F8B" Ref="R?"  Part="1" 
 AR Path="/5654C1EE/56534F8B" Ref="R?"  Part="1" 
 AR Path="/56542384/56534F8B" Ref="R?"  Part="1" 
-F 0 "R?" V 2880 4350 50  0000 C CNN
-F 1 "10k" V 2800 4350 50  0000 C CNN
-F 2 "" V 2730 4350 30  0000 C CNN
-F 3 "" H 2800 4350 30  0000 C CNN
-	1    2800 4350
+F 0 "R?" V 2880 4100 50  0000 C CNN
+F 1 "10k" V 2800 4100 50  0000 C CNN
+F 2 "" V 2730 4100 30  0000 C CNN
+F 3 "" H 2800 4100 30  0000 C CNN
+	1    2800 4100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -501,16 +501,12 @@ Wire Wire Line
 	5050 3900 4750 3900
 Wire Wire Line
 	5050 4000 4750 4000
-Wire Wire Line
-	5050 4100 4750 4100
 Text Label 4750 3800 0    60   ~ 0
 STEP
 Text Label 4750 3900 0    60   ~ 0
 DIR
 Text Label 4750 4000 0    60   ~ 0
 EN
-Text Label 4750 4100 0    60   ~ 0
-~SLP
 Wire Wire Line
 	2200 3950 2500 3950
 Wire Wire Line
@@ -518,19 +514,17 @@ Wire Wire Line
 Wire Wire Line
 	2200 4150 2500 4150
 Wire Wire Line
-	2200 4250 2500 4250
+	2200 4250 2800 4250
 Wire Wire Line
-	2200 4500 2800 4500
+	2800 4250 3150 4250
 Wire Wire Line
-	2800 4500 3150 4500
+	3850 4950 4150 4950
+Connection ~ 2800 4250
 Wire Wire Line
-	2200 4700 2500 4700
-Connection ~ 2800 4500
-Wire Wire Line
-	2800 4200 2800 3950
-Text Label 2800 4150 1    60   ~ 0
+	2800 3950 2800 3700
+Text Label 2800 3850 1    60   ~ 0
 3V3
-Text Label 3000 4500 0    60   ~ 0
+Text Label 3000 4250 0    60   ~ 0
 ~FLT
 Text Label 2300 3950 0    60   ~ 0
 STEP
@@ -538,9 +532,7 @@ Text Label 2300 4050 0    60   ~ 0
 DIR
 Text Label 2300 4150 0    60   ~ 0
 EN
-Text Label 2300 4250 0    60   ~ 0
-~SLP
-Text Label 2300 4700 0    60   ~ 0
+Text Label 3950 4950 0    60   ~ 0
 VREF
 $Comp
 L GNDD #PWR06
@@ -585,18 +577,18 @@ Connection ~ 7400 5150
 Text Label 7050 5150 0    60   ~ 0
 GND
 Wire Wire Line
-	2200 4850 2500 4850
+	2200 4350 2500 4350
 Wire Wire Line
-	2500 4850 2500 4950
+	2500 4350 2500 4450
 $Comp
 L GNDD #PWR?
 U 1 1 5709A053
-P 2500 4950
-F 0 "#PWR?" H 2500 4700 50  0001 C CNN
-F 1 "GNDD" H 2500 4800 50  0000 C CNN
-F 2 "" H 2500 4950 60  0000 C CNN
-F 3 "" H 2500 4950 60  0000 C CNN
-	1    2500 4950
+P 2500 4450
+F 0 "#PWR?" H 2500 4200 50  0001 C CNN
+F 1 "GNDD" H 2500 4300 50  0000 C CNN
+F 2 "" H 2500 4450 60  0000 C CNN
+F 3 "" H 2500 4450 60  0000 C CNN
+	1    2500 4450
 	1    0    0    -1  
 $EndComp
 $Comp
